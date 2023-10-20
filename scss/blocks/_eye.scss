@@ -1,0 +1,37 @@
+.eye {
+  width: 80px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid $black;
+  background-color: $white;
+  position: absolute;
+  top: 80px;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px $black;
+  &--left {
+    left: 30px;
+  }
+  &--right {
+    right: 30px;
+  }
+}
+
+.eyeball {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: $black;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+.eyelight {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: $white;
+  border-radius: 50%;
+  top: 30%;
+  left: 70%;
+}

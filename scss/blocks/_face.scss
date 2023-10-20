@@ -1,0 +1,13 @@
+.face {
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 2px 10px $black;
+  border-radius: 100% 50% 200% 50%;
+  transform: translateX(-50%) rotate(135deg) scale(1, -1);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  z-index: 5;
+  //background-color: #654321;
+  background: linear-gradient(to top left, $bodyParts 0%, transparent 0%);
+}

@@ -1,0 +1,11 @@
+.nose {
+  position: absolute;
+  top: 60%;
+  z-index: 9;
+  left: 50%;
+  border: 10px solid transparent;
+  border-top-color: $black;
+  border-left-color: $black;
+  transform: translateX(-50%) rotate(225deg);
+  border-radius: 50% 60% 20% 60%;
+}
