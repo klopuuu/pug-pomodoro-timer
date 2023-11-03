@@ -5,7 +5,7 @@ let breakTittle = document.getElementById('break');
 
 let colorHead = document.getElementById('head');
 
-let workTime = 1;
+let workTime = 25;
 let breakTime = 5;
 
 let switchTime = workTime;
