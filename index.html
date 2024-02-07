@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Pug Timer</title>
+
+    <link rel="stylesheet" href="./css/main.css" />
+
+    <script
+      src="https://kit.fontawesome.com/6f3103b13c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__logo">
+          <h1><span>PUG</span> TIMER</h1>
+        </div>
+      </div>
+    </header>
+
+    <div class="painel">
+      <div class="container">
+        <div class="painel__btn">
+          <div class="painel__work">
+            <p id="work">work</p>
+            <span></span> мин.
+          </div>
+
+          <div class="painel__break">
+            <p id="break">break</p>
+            <span></span> мин.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pug">
+      <div class="container">
+        <div id="head" class="pug__head">
+          <div id="ear-left" class="ear ear--left"></div>
+          <div id="ear-right" class="ear ear--right"></div>
+          <div class="brown brown--left"></div>
+          <div class="brown brown--right"></div>
+          <div class="eye eye--left">
+            <div class="eyeball">
+              <div class="eyelight"></div>
+            </div>
+          </div>
+          <div class="folds folds--top"></div>
+          <div class="folds folds--bottom"></div>
+          <div class="eye eye--right">
+            <div class="eyeball">
+              <div class="eyelight"></div>
+            </div>
+          </div>
+          <div id="face" class="face"></div>
+          <div class="nose"></div>
+          <div class="mouth mouth--left"></div>
+          <div class="mouth mouth--right"></div>
+          <div class="tongue"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="timer">
+      <div class="container">
+        <div class="timer__pug">
+          <p id="minutes"></p>
+          <p>:</p>
+          <p id="seconds"></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <div class="container">
+        <div class="controls__btn" style="display: flex; gap: 30px">
+          <button id="start">
+            <i class="fa-solid fa-play fa-2xl"></i>
+          </button>
+
+          <a id="reset" href="./"
+            ><i class="fa-solid fa-rotate-left fa-2xl"></i
+          ></a>
+
+          <button id="stop"><i class="fa-solid fa-stop fa-2xl"></i></button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="./js/script.js"></script>
+  </body>
+</html>

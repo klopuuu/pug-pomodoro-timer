@@ -1,0 +1,369 @@
+/* Reset and base styles  */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700&family=Roboto:wght@300&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Links */
+a, a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+input:focus, input:active,
+button:focus, button:active {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #242b33;
+  color: #fff;
+  font-size: 16px;
+}
+
+a {
+  color: #fff;
+  transition: color 0.2s ease-in;
+}
+a:hover {
+  color: hsl(358, 78%, 69%);
+}
+
+button i:hover {
+  color: hsl(358, 78%, 69%);
+}
+
+.container {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.brown {
+  width: 60px;
+  height: 40px;
+  border: 3px solid transparent;
+  border-bottom: 1px solid #000000 !important;
+  border-radius: 50%;
+  position: absolute;
+  top: 5px;
+  overflow: hidden;
+}
+.brown--left {
+  left: 50px;
+}
+.brown--right {
+  right: 50px;
+}
+
+.ear {
+  width: 90px;
+  height: 90px;
+  box-shadow: 2px 2px 10px #000000;
+  border-radius: 100% 30% 25% 30%;
+  transform: rotate(150deg) scale(1, -1);
+  position: absolute;
+  top: -26px;
+  z-index: 1;
+}
+.ear--left {
+  background: linear-gradient(to left, #654321 0%, transparent 5%);
+  transform: rotate(300deg) scale(-1, 1);
+}
+.ear--right {
+  background: linear-gradient(to top, #654321 0%, transparent 5%);
+  right: 0;
+}
+
+.eye {
+  width: 80px;
+  height: 70px;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  background-color: #fff;
+  position: absolute;
+  top: 80px;
+  overflow: hidden;
+  box-shadow: 2px 2px 10px #000000;
+}
+.eye--left {
+  left: 30px;
+}
+.eye--right {
+  right: 30px;
+}
+
+.eyeball {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #000000;
+  position: absolute;
+  top: 5px;
+  left: 10px;
+}
+
+.eyelight {
+  width: 15px;
+  height: 15px;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 50%;
+  top: 30%;
+  left: 70%;
+}
+
+.face {
+  width: 100px;
+  height: 100px;
+  box-shadow: 2px 2px 10px #000000;
+  border-radius: 100% 50% 200% 50%;
+  transform: translateX(-50%) rotate(135deg) scale(1, -1);
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  z-index: 5;
+  background: linear-gradient(to top left, #654321 0%, transparent 0%);
+}
+
+.folds {
+  width: 40px;
+  height: 20px;
+  border: 3px solid transparent;
+  border-bottom: 1px solid #000000 !important;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%) rotate(190deg);
+}
+.folds--bottom {
+  width: 50px;
+  bottom: 40%;
+  transform: translateX(-50%) rotate(180deg);
+}
+
+.mouth {
+  width: 50px;
+  height: 40px;
+  border: 3px solid transparent;
+  border-bottom: 4px solid #000000 !important;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 20%;
+  transform: translateX(-50%) rotate(300deg);
+  z-index: 9;
+}
+.mouth--left {
+  left: 43%;
+}
+.mouth--right {
+  left: 48%;
+  transform: rotate(-300deg);
+}
+
+.nose {
+  position: absolute;
+  top: 60%;
+  z-index: 9;
+  left: 50%;
+  border: 10px solid transparent;
+  border-top-color: #000000;
+  border-left-color: #000000;
+  transform: translateX(-50%) rotate(225deg);
+  border-radius: 50% 60% 20% 60%;
+}
+
+#head {
+  position: relative;
+  width: 300px;
+  height: 240px;
+  box-shadow: 2px 2px 10px #000000;
+  border-radius: 45%;
+  box-sizing: border-box;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pug {
+  margin-bottom: 30px;
+}
+
+.tongue {
+  width: 20px;
+  height: 25px;
+  border-top: 3px solid #000000 !important;
+  border-radius: 10% 10% 50% 150%;
+  position: absolute;
+  left: 50%;
+  bottom: 12%;
+  transform: translateX(-50%);
+  background-color: hsl(358, 78%, 69%);
+  z-index: 6;
+  box-shadow: 2px 2px 10px #000000;
+}
+
+.header__logo {
+  font-size: 50px;
+  font-weight: 800;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-bottom: 90px;
+}
+.header__logo h1 {
+  padding: 20px 0;
+}
+.header__logo span {
+  color: hsl(358, 78%, 69%);
+}
+
+.painel {
+  margin-bottom: 60px;
+}
+
+.painel__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 35px;
+  padding: 5px 15px;
+  font-size: 30px;
+  border-radius: 10rem;
+  box-shadow: 0px 0px 15px 10px hsl(235, 36%, 35%);
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+.painel__btn p.active {
+  opacity: 1;
+  color: hsl(358, 78%, 69%);
+}
+
+.controls__btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.controls__btn #start {
+  width: 30px;
+  height: 30px;
+}
+.controls__btn #reset {
+  display: none;
+}
+.controls__btn #stop {
+  display: none;
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+.timer {
+  margin-bottom: 50px;
+}
+
+.timer__pug {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  border-radius: 10rem;
+  box-shadow: 0px 0px 15px 10px hsl(235, 36%, 35%);
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px 15px;
+}
+
+.info {
+  margin-bottom: 30px;
+}
+
+.info__body {
+  max-width: 1110px;
+  margin: 0 auto;
+  padding: 0 15px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.info__body span {
+  font-weight: 300;
+  color: hsl(358, 78%, 69%);
+}/*# sourceMappingURL=main.css.map */

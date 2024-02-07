@@ -1,0 +1,20 @@
+.ear {
+  width: 90px;
+  height: 90px;
+  box-shadow: 2px 2px 10px $black;
+  border-radius: 100% 30% 25% 30%;
+  transform: rotate(150deg) scale(1, -1);
+  position: absolute;
+  top: -26px;
+  z-index: 1;
+
+  &--left {
+    background: linear-gradient(to left, $bodyParts 0%, transparent 5%);
+    transform: rotate(300deg) scale(-1, 1);
+  }
+  &--right {
+    background: linear-gradient(to top, $bodyParts 0%, transparent 5%);
+
+    right: 0;
+  }
+}
